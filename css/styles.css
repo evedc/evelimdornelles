@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    font-size: 16px;
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: pink white;
+}
+
+body {
+    margin: 0;
+    background: url("img/bg-rose.png");
+    background-repeat: no-repeat;
+
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 251, 254, 0.15);
+    backdrop-filter: blur(3px);
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, 2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    color: #000;
+    font-weight: 600;
+    cursor: default;
+}
+
+
+.navbar a {
+    font-size: 1.5rem;
+    font-family: "Onest", sans-serif;
+    color: #000;
+    margin-left: 2rem;
+    transition: 3s;
+}
+
+.navbar.active {
+    display: block;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #cc3399;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: palevioletred;
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-img img {
+    width: 500px;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+
+span {
+    color: palevioletred;
+}
+
+.mao {
+    font-size: 0.9em;
+    display: inline-block;
+    animation: girar 2.5s infinite;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: palevioletred;
+    border: .2rem solid palevioletred;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: aliceblue;
+    margin: 3rem 1.5rem 3rem 0;
+}
+
+.social-media a:hover {
+    background: palevioletred;
+    color: #000;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: palevioletred;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem palevioletred;
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+}
+
+.about-img img {
+    width: 500px;
+}
+
+.home-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    text-align: justify;
+    font-family: "DM Sans", sans-serif;
+}
+
+.habilidades h2 {
+    margin-bottom: 5rem;
+}
+
+.habilidades-container {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.habilidades-container .habilidades-box {
+    flex: 1 1 calc(20% - 2rem);
+    background: rgb(255, 245, 246);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.1rem solid palevioletred;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.habilidades-container .habilidades-box:hover {
+    border-color: rgb(255, 22, 99);
+    transform: scale(1.02);
+}
+
+.habilidades-box i {
+    font-size: 7rem;
+    color: #000
+}
+
+.habilidades-box h3 {
+    font-size: 2.6rem;
+    color: #000;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+.habilidades-box p {
+    text-align: center;
+    color: #000;
+    font-family: "DM Sans", sans-serif;
+}
+
+.portfolio {
+    background: rgb(255, 245, 246);
+}
+
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(255, 245, 246);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(233, 189, 220, 0.9612219887955182) 0%, rgba(217, 82, 135, 1) 50%, rgba(159, 12, 101, 0.700717787114846) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.portfolio-layer p {
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    margin: .3rem 0 1rem;
+    color: #fff;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 1rem;
+    color: #000;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 40rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 16px;
+    color: #000;
+    background: rgb(255, 213, 227);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .8rem 9%;
+    background: #000;
+
+}
+
+.footer-text p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    background: palevioletred;
+    border-radius: .8rem;
+
+}
+
+
+.footer-iconTop a i {
+    font-size: 2rem;
+    color: #fff
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 1900px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .habilidades {
+        padding-bottom: 5rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+        background: #fff;
+    }
+
+    .navbar .active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        background: #fff;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 50vw;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about p {
+        font-size: 20px;
+    }
+
+    .about img {
+        width: 40rem;
+    }
+
+    .habilidades-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .habilidades h2 {
+        margin-bottom: 2rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio h4 {
+
+        font-size: 12px;
+    }
+
+    .portfolio p {
+        font-size: 10px;
+    }
+}
+
+/*KEYFRAMES*/
+
+/* MÃO GIRANDO */
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*IMAGEM FLUTUANDO*/
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
