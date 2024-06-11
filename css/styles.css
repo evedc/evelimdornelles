@@ -52,13 +52,12 @@ section {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Nanum Gothic Coding", monospace;
     color: #000;
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
 }
-
 
 .navbar a {
     font-size: 1.5rem;
@@ -156,9 +155,8 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-
-
+    gap: 1rem;
+    margin-top: auto;
 }
 
 .about-img img {
@@ -234,6 +232,7 @@ span {
 
 .portfolio {
     background: rgb(255, 245, 246);
+
 }
 
 .portfolio h2 {
@@ -314,46 +313,6 @@ span {
     color: #000;
 }
 
-.contact h2 {
-    margin-bottom: 3rem;
-}
-
-.contact form {
-    max-width: 40rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 16px;
-    color: #000;
-    background: rgb(255, 213, 227);
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-.contact form .input-box input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
 
 .footer {
     display: flex;
@@ -515,8 +474,6 @@ span {
 
     }
 
-
-
     .home {
         display: flex;
         justify-content: center;
@@ -544,6 +501,7 @@ span {
         text-align: center;
         align-items: center;
     }
+
 }
 
 /*KEYFRAMES*/
