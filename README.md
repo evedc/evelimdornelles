@@ -34,6 +34,6 @@ O design do site foi inspirado por temas minimalistas e modernos, com foco na cl
 Fique à vontade para entrar em contato comigo através das seguintes plataformas:
 
 - Email: dorrrnelles@gmail.com
-- [Linkdin](https://www.linkedin.com/in/evelimcardozo/)
+- [Linkedin](https://www.linkedin.com/in/evelimcardozo/)
 - [GitHub](https://github.com/evedc)
 
