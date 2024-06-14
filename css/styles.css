@@ -151,7 +151,8 @@ section {
 
 .heading {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3rem;
+
 }
 
 .sobremim-container {
@@ -219,17 +220,64 @@ section {
     font-size: 14px;
     color: #000;
     font-family: "Onest", sans-serif;
-
-}
-
-.portfolio {
-    background: #fff;
 }
 
 .portfolio h2 {
     margin-bottom: 4rem;
 }
 
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    box-shadow: #000;
+
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0101018f;
+    color: #fff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
 
 .footer {
     display: flex;
@@ -347,7 +395,48 @@ section {
 
 }
 
-@media screen and (max-width: 994px) {
+@media screen and (max-width: 1200px) {
+    .home-content {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-content h1 {
+        text-align: center;
+    }
+
+    .home-content h3 {
+        font-size: 30px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+    }
+
+    .sobremim-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-box img {
+        width: 50%;
+    }
+
+
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 996px) {
     .header {
         padding: 2rem 3%;
     }
@@ -395,6 +484,12 @@ section {
         font-size: 30px;
         text-align: center;
     }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -423,6 +518,7 @@ section {
         font-size: 2rem;
         margin: 3rem 0;
         background: #fff;
+        color: #000;
     }
 
     .home {
@@ -436,6 +532,11 @@ section {
 
     .home-content h1 {
         font-size: 5rem;
+    }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -482,4 +583,24 @@ section {
         font-size: 30px;
         text-align: center;
     }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .footer-text {
+        text-align: left;
+    }
+
+    .footer-iconTop {
+        display: flex;
+        justify-content: center;
+    }
+
 }
