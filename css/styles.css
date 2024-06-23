@@ -138,10 +138,12 @@ section {
     font-size: 2rem;
     color: aliceblue;
     margin: 3rem 1.5rem 3rem 0;
+    opacity: 1;
 }
 
 .social-media a:hover {
     transform: scale(1.02);
+    opacity: 0.8;
 }
 
 .sobre {
