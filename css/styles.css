@@ -64,7 +64,7 @@ section {
 }
 
 .navbar a:hover {
-    color: #000
+    text-decoration: bold;
 }
 
 .navbar a:hover,
@@ -284,6 +284,7 @@ section {
 .footer {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
     flex-wrap: wrap;
     padding: .8rem 9%;
